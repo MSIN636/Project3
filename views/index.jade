@@ -17,7 +17,7 @@ block content
                 img.post(src='/images/uploads/#{post.mainimage}')
                 br
                 br
-                !=truncateText(post.body,1000)
+                !=truncateText(post.body,500)
                 br
                 p.text-center
                   a.btn.btn-primary.btn-sm(href="/posts/show/#{post._id}") Read more>>
