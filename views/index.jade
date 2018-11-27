@@ -26,7 +26,7 @@ block content
                   a(href="/categories/show/#{post.category}").badge.badge-primary #{post.category}
                   &nbsp;&nbsp;by #{post.author} on 
                 p.text-center 
-                  !#{moment(post.date).format("MM-DD-YYYY")}
+                  moment(post.date).format("MM-DD-YYYY")
         if(posts=="")
           .panel.panel-default.post-panel
             .panel-heading.text-center
